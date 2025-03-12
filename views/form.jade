@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Simple Form
+  form(action="/display", method="post")
+    label(for="name") Name:
+    input#name(type="text", name="name", placeholder="Enter your name")
+    br
+    label(for="email") Email: 
+    input#email(type="email", name="email", placeholder="Enter your email")
+    br
+    button(type="submit") Submit
