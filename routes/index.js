@@ -19,4 +19,14 @@ router.post("/display", function (req, res) {
   });
 });
 
+router.get("/api/auth", function (req, res) {
+  res.render("auth", {
+    title: "auth",
+    name: name,
+    email: email,
+    contactNumber: contactNumber,
+    password: password,
+  });
+});
+
 module.exports = router;
